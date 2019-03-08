@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h3 id="sitePageTitle">
+        Vending Machine
+        <hr />
+      </h3>
+    	<div class="row">
+    		<div class="col-md-9">
+
+          <!--  DYNAMIC GOES IN allItemsOnLoadUp -->
+    			<div id="allItemsOnLoadUp" class="row">
+
+    				<!-- <div class="col-md-4 itemButtons">
+    					<button type="button" class="btn btn-success" id = "Snickers" value="1.85">
+                <div class = "number" id="SnickersId">
+                  444441 <br />
+                </div>
+                <div class = "item">
+                  <h7 id = "itemSnickers">Snickers</h7> <br />
+                </div>
+                <div class = "price">
+                  $1.50 <br /><br />
+                </div>
+                <div class = "quantity">
+                  <h7 id="quantity1">Quantity Left: 1000</h7>
+                </div>
+    					</button>
+    				</div>
+
+
+    				<div class="col-md-4 itemButtons">
+    					<button type="button" class="btn btn-success" id = "MMs" value ="1.50">
+                <div class = "number" id="MMsId">
+                  2 <br />
+                </div>
+                <div class = "item">
+                  <h7 id ="itemMMs">M & Ms</h7> <br />
+                </div>
+                <div class = "price">
+                  $1.25 <br /><br />
+                </div>
+                <div class = "quantity">
+                  <h7 id="quantity2">Quantity Left: 8</h7>
+                </div>
+    					</button>
+    				</div>
+    				<div class="col-md-4 itemButtons">
+
+    					<button type="button" class="btn btn-success" id="AlmondJoy" value="1.25">
+                <div class = "number" id="AlmondJoyId">
+                  3 <br />
+                </div>
+                <div class = "item">
+                  <h7 id="itemAlmondJoy">Almond Joy</h7> <br />
+                </div>
+                <div class = "price">
+                  $1.25 <br /><br />
+                </div>
+                <div class = "quantity">
+                  <h7 id="quantity3">Quantity Left: 11</h7>
+                </div>
+    					</button>
+    				</div>
+    				<div class="col-md-4 itemButtons">
+
+    					<button type="button" class="btn btn-success" id="MilkyWay" value="1.65">
+                <div class = "number" id="MilkyWayId">
+                  4 <br />
+                </div>
+                <div class = "item">
+                  <h7 id ="itemMilkyWay">Milky Way</h7> <br />
+                </div>
+                <div class = "price">
+                  $1.65 <br /><br />
+                </div>
+                <div class = "quantity">
+                  <h7 id="quantity4">Quantity Left: 3</h7>
+                </div>
+    					</button>
+    				</div>
+    				<div class="col-md-4 itemButtons">
+
+    					<button type="button" class="btn btn-success" id="Payday" value="1.75">
+                <div class = "number" id="PaydayId">
+                  5 <br />
+                </div>
+                <div class = "item">
+                 <h7 id="itemPayday">Payday</h7> <br />
+                </div>
+                <div class = "price">
+                  $1.75 <br /><br />
+                </div>
+                <div class = "quantity">
+                  <h7 id="quantity5">Quantity Left: 1</h7>
+                </div>
+    					</button>
+    				</div>
+    				<div class="col-md-4 itemButtons">
+
+    					<button type="button" class="btn btn-success" id="Reeses" value="1.50">
+                <div class = "number" id="ReesesId">
+                  6 <br />
+                </div>
+                <div class = "item">
+                 <h7 id ="itemReeses">Reese's</h7> <br />
+                </div>
+                <div class = "price">
+                  $1.50 <br /><br />
+                </div>
+                <div class = "quantity">
+                  <h7 id="quantity6">Quantity Left: 5</h7>
+                </div>
+    					</button>
+    				</div>
+    				<div class="col-md-4 itemButtons">
+
+    					<button type="button" class="btn btn-success" id="Pringles" value="2.35">
+                <div class = "number"id="PringlesId">
+                  7 <br />
+                </div>
+                <div class = "item">
+                  <h7 id="itemPringles">Pringles</h7> <br />
+                </div>
+                <div class = "price">
+                  $2.35 <br /><br />
+                </div>
+                <div class = "quantity">
+                  <h7 id="quantity7">Quantity Left: 4</h7>
+                </div>
+    					</button>
+    				</div>
+    				<div class="col-md-4 itemButtons">
+
+    					<button type="button" class="btn btn-success" id="Cheezits" value="2.00">
+                <div class = "number" id="CheezitsId">
+                  8<br />
+                </div>
+                <div class = "item">
+                  <h7 id="itemCheezits">Cheezits</h7> <br />
+                </div>
+                <div class = "price">
+                  $2.00 <br /><br />
+                </div>
+                <div class = "quantity">
+                  <h7 id="quantity8">Quantity Left: 6</h7>
+                </div>
+    					</button>
+    				</div>
+    				<div class="col-md-4 itemButtons">
+
+    					<button type="button" class="btn btn-success" id="Doritos" value="1.95">
+                <div class = "number" id="DoritosId">
+                  9 <br />
+                </div>
+                <div class = "item">
+                  <h7 id="itemDoritos">Doritos</h7> <br />
+                </div>
+                <div class = "price">
+                  $1.95 <br /><br />
+                </div>
+                <div class = "quantity">
+                  <h7 id="quantity9">Quantity Left: 7</h7>
+                </div>
+    					</button>
+    				</div> -->
+
+        </div>
+    		</div>
+
+
+
+
+
+
+
+
+
+          <!-- Rightmost column -->
+
+          <div class="col-md-3">
+
+            <form id="totalInForm">
+
+      			<div class="row">
+      				<div class="col-md-12">
+      					<h4 id="totalInText" class="textLabels">
+      						Total$ In
+      					</h4>
+      				</div>
+      			</div>
+<br /><br />
+
+            <div class="row">
+              <div class="col-md-12">
+                <input id="moneyBox" class="theBoxes" type="text" value="0.00" readonly />
+                <input id="hiddenMoney" type="hidden" value="0.00" />
+
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <button type="button" id ="dollar" class="btn btn-success theFour">
+                  Add Dollar
+                </button>
+              </div>
+
+              <div class="col-md-6 quarNick">
+                <button type="button"  id ="quarter" class="btn btn-success theFour">
+                  Add Quarter
+                </button>
+              </div>
+            </div>
+<br />
+            <div class="row">
+              <div class="col-md-6">
+                <button type="button"  id ="dime" class="btn btn-success theFour">
+                  Add Dime
+                </button>
+              </div>
+
+              <div class="col-md-6 quarNick">
+                <button type="button"  id ="nickel" class="btn btn-success theFour">
+                  Add Nickel
+                </button>
+              </div>
+            </div>
+
+          </form>
+
+
+
+<hr class="horizontalRules"/>
+
+
+
+<div class = "container lastColMid" >
+  <form id="messagesForm">
+
+            <div class="row">
+      				<div class="col-md-12">
+                <h4 class="textLabels">Messages</h4>
+      				</div>
+      			</div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <input id="messageBox" class="theBoxes" type="text" readonly>
+                <br /><br />
+              </div>
+            </div>
+
+
+
+      			<div class="row">
+      				<div class="col-md-6">
+      					<h4 class="textLabels">
+      						Item:
+      					</h4>
+
+      				</div>
+      				<div class="col-md-6">
+                <input id="itemBox" class="theBoxes" type="text" readonly>
+                  <input type="hidden" id="hiddenItemId">
+      				</div>
+      			</div>
+
+
+
+      			<div class="row">
+      				<div class="col-md-12">
+                <div class="container columnButtons">
+
+      					<button type="button" id="makePurchaseButton" class="btn btn-success">
+      						Make Purchase
+      					</button>
+      				</div>
+            </div>
+      			</div>
+
+</div>
+
+</form>
+
+<hr class="horizontalRules"/>
+
+
+            <!-- Third Cell -->
+
+            <div class="row">
+      				<div class="col-md-12">
+                <h4 class="textLabels">Change</h4>
+      				</div>
+      			</div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <input type="text" id="changeBox" class="theBoxes" readonly />
+              </div>
+            </div>
+
+            <div class="row">
+              <div id = "changeReturnButton" class="col-md-12">
+                <div class="container columnButtons">
+                <button type="button" class="btn btn-success">
+                  Change Return
+                </button>
+              </div>
+              </div>
+            </div>
+
+
+      		</div>
+
+
+
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<!-- load up mock data service before the home.js so it has data to use -->
+<!-- <script src="js/mockDataService.js"></script> -->
+<script src="js/home.js"></script>
+  </body>
+</html>

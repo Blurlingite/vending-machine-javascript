@@ -1,0 +1,135 @@
+#sitePageTitle{
+  text-align: center;
+  font-size: 30px;
+  /* border-bottom:3px solid black; */
+}
+
+.container-fluid{
+  position : absolute;
+  left : 30px;
+}
+
+input{
+  text-align:center;
+}
+
+/* the number on the button */
+.number{
+  text-align: left;
+}
+
+h4{
+  text-align: center;
+}
+
+/* the 4 add money buttons */
+.theFour{
+  height: 40px;
+  width: 120px;
+}
+
+/* .lastColMid{
+  border-top : 3px solid black;
+  border-bottom : 3px solid black;
+
+} */
+
+.columnButtons{
+  height: 40px;
+  width: 140px;
+}
+
+#moneyBox{
+  width : 130px;
+  margin-left : 21%;
+}
+
+#itemBox{
+  width : 120px;
+  position : absolute;
+  left : -30px;
+}
+
+#messageBox{
+  /* width : 120px; */
+  position : absolute;
+  /* align: left; */
+  left : 62px;
+}
+
+.quarNick{
+  position : absolute;
+  left : 150px;
+}
+
+/* #dollar{
+  position : absolute;
+  left : 10px;
+}
+
+ #quarter{
+  position : absolute;
+  left : -10px;
+}
+
+#dime{
+  position : absolute;
+  left : 10px;
+  bottom : -60px;
+}
+
+#nickel{
+  position : absolute;
+  left : -10px;
+  bottom : -60px;
+} */
+
+/* #makePurchase{
+  position : right;
+  left : 40px;
+} */
+
+#changeReturnButton{
+  position : right;
+  left : -15px;
+  bottom : -33px;
+}
+
+
+#changeBox{
+  width : 170px;
+  position : absolute;
+  left : 80px;
+}
+
+.itemButtons{
+  left: 83px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+
+}
+
+.snacks{
+  border: 3px solid #a17f1a;
+  background-color: dodgerBlue;
+  color:black;
+}
+
+#totalInText{
+  position : absolute;
+
+  left:96px;
+
+}
+
+#makePurchaseButton{
+  position : absolute;
+
+  left:66px;
+}
+
+.theBoxes{
+  border: 3px solid purple;
+
+}
