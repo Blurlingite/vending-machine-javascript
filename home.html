@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/notHome.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
 
   </head>
   <body>
@@ -14,165 +14,6 @@
         <hr />
       </h3>
 
-    	<!-- <div class="row"> -->
-    		<!-- <div class="col-md-9"> -->
-
-          <!--  DYNAMIC GOES IN allItemsOnLoadUp -->
-    			<!-- <div id="allItemsOnLoadUp" class="row">
-
-          </div> -->
-    		<!-- </div> -->
-
-
-          <!-- Rightmost column -->
-
-        <!-- <div class="col-md-3"> -->
-
-          <!-- <form id="totalInForm"> -->
-
-      			<!-- <div class="row"> -->
-      				<!-- <div class="col-md-12"> -->
-      					<!-- <h4 id="totalInText" class="textLabels">
-      						Total$ In
-      					</h4> -->
-      				<!-- </div> -->
-      			<!-- </div> -->
-
-            <!-- <br /><br /> -->
-
-            <!-- <div class="row">
-              <div class="col-md-12">
-
-                <input id="moneyBox" class="theBoxes" type="text" value="0.00" readonly />
-                <input id="hiddenMoney" type="hidden" value="0.00" />
-
-              </div>
-            </div> -->
-
-
-            <!-- <div class="row">
-              <div class="col-md-6">
-                <button type="button" id ="dollar" class="btn btn-success theFour">
-                  Add Dollar
-                </button>
-              </div> -->
-
-              <!-- <div class="col-md-6 quarNick">
-                <button type="button"  id ="quarter" class="btn btn-success theFour">
-                  Add Quarter
-                </button>
-              </div>
-            </div> -->
-
-            <!-- <br />
-
-            <div class="row">
-              <div class="col-md-6">
-                <button type="button"  id ="dime" class="btn btn-success theFour">
-                  Add Dime
-                </button>
-              </div> -->
-
-              <!-- <div class="col-md-6 quarNick">
-                <button type="button"  id ="nickel" class="btn btn-success theFour">
-                  Add Nickel
-                </button>
-              </div>
-            </div> -->
-
-          <!-- </form> -->
-
-
-
-        <!-- <hr class="horizontalRules"/> -->
-
-
-
-        <!-- <div class = "container lastColMid" > -->
-
-          <!-- <form id="messagesForm"> -->
-
-            <!-- <div class="row"> -->
-      				<!-- <div class="col-md-12">
-                <h4 class="textLabels">Messages</h4>
-      				</div>
-      			</div> -->
-
-            <!-- <div class="row">
-              <div class="col-md-12">
-                <input id="messageBox" class="theBoxes" type="text" readonly>
-                <br /><br />
-              </div>
-            </div> -->
-
-      			<!-- <div class="row">
-      				<div class="col-md-6">
-      					<h4 class="textLabels">
-      						Item:
-      					</h4>
-      				</div> -->
-
-      				<!-- <div class="col-md-6">
-                <input id="itemBox" class="theBoxes" type="text" readonly>
-                  <input type="hidden" id="hiddenItemId">
-      				</div>
-      			</div> -->
-
-
-
-      			<!-- <div class="row">
-      				<div class="col-md-12">
-                <div class="container columnButtons">
-
-      					  <button type="button" id="makePurchaseButton" class="btn btn-success">
-      						  Make Purchase
-      					  </button>
-      				  </div>
-              </div>
-      			</div> -->
-
-        <!-- </div> -->
-
-      <!-- </form> -->
-
-      <!-- <hr class="horizontalRules"/> -->
-
-
-            <!-- Third Cell -->
-
-            <!-- <div class="row">
-      				<div class="col-md-12">
-                <h4 class="textLabels">Change</h4>
-      				</div>
-      			</div> -->
-<!--
-            <div class="row">
-              <div class="col-md-12">
-                <input type="text" id="changeBox" class="theBoxes" readonly />
-              </div>
-            </div> -->
-
-            <!-- <div class="row">
-              <div id = "changeReturnButton" class="col-md-12">
-                <div class="container columnButtons">
-                <button type="button" class="btn btn-success">
-                  Change Return
-                </button>
-              </div>
-              </div>
-            </div>
-
-
-      		</div> -->
-
-
-
-
-
-
-
-<!-- **************** NEW FORMAT ******** -->
-
 
           <div class="container-fluid">
           	<div class="row">
@@ -180,26 +21,33 @@
           			<div class="row">
           				<div class="col-md-9">
           					<div class="row">
-                      <!--  DYNAMIC GOES IN allItemsOnLoadUp -->
+                      <!--  DYNAMICALLY CREATED ITEMS GO IN allItemsOnLoadUp -->
                 			<div id="allItemsOnLoadUp" class="row">
 
                       </div>
           					</div>
           				</div>
-          				<div class="col-md-3">
+
+          				<div class="col-md-3 theStaticContent">
 
                     <form id="totalInForm">
 
           					  <div class="row">
-          						  <div class="col-md-12">
+          						  <div class="col-md-12 ">
+
+
+                          <div class -"col-md-2">
+
                           <h4 id="totalInText" class="textLabels">
                             Total$ In
                           </h4>
+                        </div>
+
           						  </div>
           					  </div>
 
           					  <div class="row">
-          						  <div class="col-md-12">
+          						  <div class="col-md-12 theBoxDivs">
 
                           <input id="moneyBox" class="theBoxes" type="text" value="0.00" readonly />
                           <input id="hiddenMoney" type="hidden" value="0.00" />
@@ -207,7 +55,9 @@
                         </div>
           					  </div>
 
-          					<div class="row">
+                      <br />
+
+          					<div class="row moneyButtonRow">
           						<div class="col-md-6">
 
                         <button type="button" id ="dollar" class="btn btn-success theFour">
@@ -225,8 +75,9 @@
           						</div>
           					</div>
 
-          					<div class="row">
-          						<div class="col-md-6">
+
+          					<div class="row moneyButtonRow">
+          						<div class="col-md-6 moneyButtonPadding">
 
                         <button type="button"  id ="dime" class="btn btn-success theFour">
                           Add Dime
@@ -234,7 +85,7 @@
 
           						</div>
 
-          						<div class="col-md-6 quarNick">
+          						<div class="col-md-6 quarNick moneyButtonPadding">
                         <button type="button"  id ="nickel" class="btn btn-success theFour">
                           Add Nickel
                         </button>
@@ -242,131 +93,111 @@
 
           					</div>
 
+
                     </form>
 
-          				</div>
-          			</div>
+                    <hr class="horizontalRules"/>
 
-          			<div class="row">
-          				<div class="col-md-9">
-          					<div class="row">
-          						<div class="col-md-4">
-          							<!-- <h3>
-          								BUTTON
-          							</h3> -->
-          						</div>
-          						<div class="col-md-4">
-          						</div>
-          						<div class="col-md-4">
-          						</div>
-          					</div>
-          				</div>
 
-                  <hr class="horizontalRules"/>
 
-          				<div class="col-md-3 lastColMid">
                     <form id="messagesForm">
 
-          					  <div class="row">
-          						  <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-12">
 
                           <h4 class="textLabels">Messages</h4>
 
-          						  </div>
-          					  </div>
-
-          					<div class="row">
-          						<div class="col-md-12">
-
-                        <input id="messageBox" class="theBoxes" type="text" readonly>
-                        <br /><br />
-
-                      </div>
-          					</div>
-          					<div class="row">
-          						<div class="col-md-4">
-
-                        <h4 class="textLabels">
-                          Item:
-                        </h4>
-
-          						</div>
-
-          						<div class="col-md-8">
-
-                        <input id="itemBox" class="theBoxes" type="text" readonly>
-                        <input type="hidden" id="hiddenItemId">
-
-                      </div>
-          					</div>
-
-          					<div class="row">
-          						<div class="col-md-12">
-                        <div class="container columnButtons">
-
-                          <button type="button" id="makePurchaseButton" class="btn btn-success">
-                            Make Purchase
-                          </button>
                         </div>
-          						</div>
+                      </div>
 
-                      </form>
+                      <div class="row">
+                        <div class="col-md-12 theBoxDivs">
+
+                          <input id="messageBox" class="theBoxes" type="text" readonly>
+
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-md-4 itemBoxPadding">
+
+                          <h4 id="itemText" class="textLabels">
+                            Item:
+                          </h4>
+
+                        </div>
+
+                        <div class="col-md-8 theBoxDivs itemBoxPadding">
+
+                          <input id="itemBox" class="theBoxes" type="text" readonly>
+                          <input type="hidden" id="hiddenItemId">
+
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="container columnButtons purChangePadding">
+
+                            <button type="button" id="makePurchaseButton" class="btn btn-success">
+                              Make Purchase
+                            </button>
+                          </div>
+                        </div>
+
+                        </form>
+                      </div>
+
 
                       <hr class="horizontalRules"/>
 
 
-          					</div>
+
+
+                      <div class="row">
+                        <div class="col-md-12">
+
+                          <h4 class="textLabels">Change</h4>
+
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-md-12 theBoxDivs">
+
+                          <input type="text" id="changeBox" class="theBoxes" readonly />
+
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div id = "changeReturnButton" class="col-md-12">
+
+                          <div id="changeButtonPadding" class="container columnButtons">
+
+                            <button type="button" class="btn btn-success">
+                              Change Return
+                            </button>
+
+                          </div>
+
+                        </div>
+                      </div>
+
+
           				</div>
           			</div>
 
-
-
-                <!-- Third Cell -->
-
-          			<div class="row">
-          				<div class="col-md-9">
-          					<div class="row">
-          						<div class="col-md-4">
-          							<h3>
-          								BUTTON
-          							</h3>
-          						</div>
-          						<div class="col-md-4">
-          						</div>
-          						<div class="col-md-4">
-          						</div>
-          					</div>
           				</div>
 
-          				<div class="col-md-3">
 
-          					<div class="row">
-          						<div class="col-md-12">
 
-                        <h4 class="textLabels">Change</h4>
 
-          						</div>
-          					</div>
 
-          					<div class="row">
-          						<div class="col-md-12">
-
-                        <input type="text" id="changeBox" class="theBoxes" readonly />
-
-          						</div>
-          					</div>
-
-          					<div class="row">
-                      <div id = "changeReturnButton" class="col-md-12">
-                        <div class="container columnButtons">
-                        <button type="button" class="btn btn-success">
-                          Change Return
-                        </button>
-                      </div>
-                      </div>
-          					</div>
-          				</div>
-          			</div>
           		</div>
           	</div>
           </div>

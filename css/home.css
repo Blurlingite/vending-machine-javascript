@@ -1,109 +1,147 @@
 #sitePageTitle{
+
   text-align: center;
   font-size: 30px;
-  /* border-bottom:3px solid black; */
+
 }
+
+
+#itemBox{
+
+  width:80px;
+
+}
+
+#itemText{
+  text-align: right;
+}
+
+
+body{
+
+    background-color: #9999ff;
+
+}
+
+
+h4{
+
+  text-align: center;
+
+}
+
+
+.textLabels{
+
+  text-align:center;
+
+}
+
 
 .container-fluid{
+
   position : absolute;
   left : 30px;
+
 }
 
-input{
-  text-align:center;
-}
 
 /* the number on the button */
 .number{
+
   text-align: left;
+
 }
 
-h4{
-  text-align: center;
-}
 
 /* the 4 add money buttons */
 .theFour{
+
   height: 40px;
   width: 120px;
+
 }
 
-/* .lastColMid{
-  border-top : 3px solid black;
-  border-bottom : 3px solid black;
-
-} */
 
 .columnButtons{
-  height: 40px;
-  width: 140px;
+
+  text-align:center;
+
 }
 
-#moneyBox{
-  width : 130px;
-  margin-left : 21%;
-}
-
-#itemBox{
-  width : 120px;
-  position : absolute;
-  left : -30px;
-}
-
-#messageBox{
-  /* width : 120px; */
-  position : absolute;
-  /* align: left; */
-  left : 62px;
-}
 
 .quarNick{
+
   position : absolute;
   left : 150px;
+
 }
 
-
-#changeReturnButton{
-  position : right;
-  left : -15px;
-  bottom : -33px;
-}
-
-
-#changeBox{
-  width : 170px;
-  position : absolute;
-  left : 80px;
-}
 
 .itemButtons{
+
   left: 83px;
   margin-top: 10px;
   margin-bottom: 40px;
 
-
 }
 
+
+/* Dynamically added in javascript file with this class name */
 .snacks{
+
   border: 3px solid #a17f1a;
   background-color: dodgerBlue;
   color:black;
-}
-
-#totalInText{
-  position : absolute;
-
-  left:96px;
 
 }
 
-#makePurchaseButton{
-  position : absolute;
 
-  left:66px;
+.theStaticContent{
+
+  align:right;
+
 }
+
 
 .theBoxes{
+
   border: 3px solid purple;
+  text-align:center;
+
+}
+
+
+.theBoxDivs{
+
+  text-align:center;
+
+}
+
+
+.horizontalRules{
+
+  border-top: 4px solid black;
+
+}
+
+
+.moneyButtonRow{
+
+  text-align: right;
+
+}
+
+
+.moneyButtonPadding, .itemBoxPadding, #changeButtonPadding {
+
+    padding-top: 7px;
+
+}
+
+
+.purChangePadding{
+
+  padding-top: 4px;
 
 }
