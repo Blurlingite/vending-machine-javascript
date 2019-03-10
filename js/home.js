@@ -1,11 +1,10 @@
 function HTMLItem(itemId,itemName,itemPrice,itemQuantity){
-
+itemPrice = moneyFormatter(itemPrice);
 // filter special characters out of itemName and assign to a new variable to use only for the button's ID
 // because document.on can't handle special characters
 var replaceAnd = itemName.replace("&", "");
 var alsoReplaceSingleQuote = replaceAnd.replace("'","");
 var alsoReplaceWhiteSpace = alsoReplaceSingleQuote.replace(" ","");
-
 
 var data = `<div class="col-md-4 itemButtons">
     					<button type="button" class="btn btn-success snacks" id = "${alsoReplaceWhiteSpace}" value="${itemPrice}">
@@ -242,4 +241,45 @@ $(document).ready(function(){
 
   })
 
+
+// End of document.ready
 })
+
+
+// If the moneyAmount has only 1 character after the decimal, add a 0 right after that character
+function moneyFormatter(moneyAmount){
+
+  let numberToReturn = moneyAmount;
+
+// get an array that contains all the characters of the string after the decimal "."
+  let arrayOfChars = moneyAmount.toString().split(".")[1];
+
+// if the array is undefined (b/c the number was just a whole number , like 2, add .00 and return it)
+  if(arrayOfChars === undefined){
+    return numberToReturn + ".00";
+  }
+
+  // if the number isn't a whole number, you will
+  // come here and get the size of the array
+  let sizeOfArrayOfChars = arrayOfChars.length;
+
+
+
+  // if the size of the array is 2(the number was something like 1.25)
+  // you can return the number (1.25) as it is
+
+  // else if the size was 1 (you got a number like 1.5), add a "0" and return it
+
+  //else, just return the number you got
+  if(sizeOfArrayOfChars === 2){
+    numberToReturn = numberToReturn;
+    return numberToReturn;
+  }else if(sizeOfArrayOfChars === 1){
+    numberToReturn = numberToReturn + "0"
+    return numberToReturn;
+  }else{
+    return numberToReturn;
+  }
+
+
+}
